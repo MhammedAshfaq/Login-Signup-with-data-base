@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-3">
+        <div class="row-3">
+            <h1 class="header-3">Welcom to Flipkart</h1>
+            <div class="section-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magnam dignissimos officiis debitis non,
+                rerum asperiores sit, voluptatem commodi excepturi odit. Porro at dolores exercitationem repudiandae
+                quidem, dicta dolorem. Corporis!
+            </div> <br>
+            <div class="containerS">
+                {{!-- After login user name printing --}}
+                {{#if user}}
+                <h2 style="margin-top: -5px;">Hai How's Going</h2>
+                <h3>{{user.fname}} {{user.lname}}</h3>
+                {{else}}
+                <h3>Account</h3>
+                {{/if}}
+
+                {{#if user}}
+                <strong>Do you want -</strong>
+                <a href="/logout">Logout</a>
+                {{else}}
+                <a href="/">Login</a>
+                {{/if}}
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

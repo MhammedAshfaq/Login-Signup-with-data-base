@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+
+<body>
+    {{!-- Form secttion starts --}}
+    <section>
+        <div class="container-2">
+            <div class="row-2">
+                <form action="/users" method="POST" autocomplete="off">
+                    <h1 class="header-2">Signup Form</h1>
+                    <div class="formcontrol">
+                        <label for="">Name</label>
+                        <input type="text" name="fname" placeholder="First name">
+                        <input type="text" name="lname" placeholder="Last name">
+                    </div>
+                    <div class="formcontrol">
+                        <label for="">Username</label>
+                        <input type="text" name="username" placeholder="Username..">
+                    </div>
+                    <div class="formcontrol">
+                        <label for="">Email</label>
+                        <input type="text" name="email" placeholder="Email..">
+                    </div>
+                    <div class="formcontrol">
+                        <label for="">Phone</label>
+                        <input type="number" name="phone" placeholder="Phone No">
+                        <label for="">Age</label>
+                        <input type="number" name="age" placeholder="Age">
+                    </div>
+                    <div class="formcontrol">
+                        <label for="">Password</label>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="button-2">
+                        <a href="/">Already have accound</a>
+                        <input type="submit" value="Signup">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    {{!-- Form secttion ends --}}
+</body>
+
+</html>
